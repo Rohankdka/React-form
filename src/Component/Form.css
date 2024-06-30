@@ -1,0 +1,68 @@
+/* form.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form input[type="text"],
+  .form input[type="file"],
+  .form textarea,
+  .form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .form input[type="text"]::placeholder,
+  .form input[type="file"]::placeholder,
+  .form textarea::placeholder {
+    color: #aaa;
+  }
+  
+  .form input[type="text"]:focus,
+  .form input[type="file"]:focus,
+  .form textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+  }
+  
+  .form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .form button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .form button:hover {
+    background-color: #4cae4c;
+  }
+  
+  .form button:focus {
+    outline: none;
+  }
+  
