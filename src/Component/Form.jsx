@@ -10,7 +10,15 @@ const Form = ({ formType }) => {
         <input type="text" placeholder='Enter a Sub Title' />
         <input type="file" />
         <textarea placeholder='Enter your text here'></textarea>
-        <button type="submit">{formType === 'submit' ? 'Submit' : 'Edit'}</button>
+        {formType === 'submit' && (
+          <>
+            <button type="submit">Submit</button>
+            <button type="edit">Edit</button>
+          </>
+        )}
+        {formType === 'edit' && (
+          <button type="submit">Submit</button>
+        )}
       </div>
     </form>
   );
